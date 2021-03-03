@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--    custom emoji view   -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#000"
+        tools:context="HappySmacks.dev.customkeyboard.HappySmacksKeyboard">
+
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/keyboard_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#19314A"
+            android:keyBackground="@drawable/key_background"
+            android:keyPreviewLayout="@layout/key_preview"
+            android:keyTextColor="@android:color/white" />
+
+        <LinearLayout
+            android:id="@+id/custom_emoji_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FFF"
+                android:orientation="horizontal">
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/return_to_keys1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/cancel"
+                            android:onClick="toKeyboard"
+                            android:paddingHorizontal="5dp"
+                            android:text="back"
+                            android:textColor="#000" />
+                        <!--default tab                        /-->
+                        <ImageButton
+                            android:id="@+id/emojiKamasutra"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/kamasutra1"
+                            android:onClick="toKamasutraEmoji"
+                            android:text="back"
+                            android:textColor="#000" />
+
+                        <ImageButton
+                            android:id="@+id/emojiSmiley"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/smile"
+                            android:onClick="toSmileyEmoji"
+                            android:textColor="#000" />
+
+                        <TextView
+                            android:id="@+id/emojiAnimals"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:onClick="toSmileyAnimals"
+                            android:text="🐻"
+                            android:textColor="#000"
+                            android:textSize="29dp" />
+                        <!--            add emoji button-->
+                        <TextView
+                            android:id="@+id/emojiFood"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:onClick="toSmileyFood"
+                            android:text="🍔"
+                            android:textColor="#000"
+                            android:textSize="29dp" />
+                        ️
+
+                        <TextView
+                            android:id="@+id/emojiBall"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:onClick="toSmileySports"
+                            android:text="⚽"
+                            android:textColor="#000"
+                            android:textSize="29dp" />
+
+                        <TextView
+                            android:id="@+id/emojiCars"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:onClick="toSmileyCars"
+                            android:text="🚗"
+                            android:textColor="#000"
+                            android:textSize="29dp" />
+
+                        <TextView
+                            android:id="@+id/emojiObjects"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:onClick="toSmileyObjects"
+                            android:text="💡"
+                            android:textColor="#000"
+                            android:textSize="29dp" />
+
+                        <TextView
+                            android:id="@+id/emojiSymbols"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:onClick="toSmileySymbols"
+                            android:text="🎵"
+                            android:textColor="#000"
+                            android:textSize="29dp" />
+
+                        <TextView
+                            android:id="@+id/emojiFlags"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:onClick="toSmileyFlags"
+                            android:text="🏳️‍"
+                            android:textColor="#000"
+                            android:textSize="29dp" />
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp">
+
+                <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/customEmojiContainer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#D20C0D"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+        <!--        image view-->
+
+
+        <LinearLayout
+            android:id="@+id/images_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <ImageButton
+                            android:id="@+id/return_to_keys"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="10dp"
+                            android:paddingHorizontal="5dp"
+                            android:background="@drawable/cancel"
+                            android:onClick="showKeys"
+                            />
+                        <ImageButton
+                            android:id="@+id/addStickers"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:paddingHorizontal="5dp"
+                            android:background="@drawable/plus"
+                            android:onClick="addStickers"
+                            android:text="back"
+                            android:textColor="#000" />
+
+                        <Button
+                            android:id="@+id/myStickers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#000"
+                            android:onClick="myStickers"
+
+                            android:text="My stickers"
+                            android:textColor="#FFF" />
+
+                        <Button
+                            android:id="@+id/lgbtq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#000"
+                            android:onClick="lgbtqStickers"
+
+                            android:text="LGBTQ"
+                            android:textColor="#FFF" />
+
+                        <Button
+                            android:id="@+id/mime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#000"
+                            android:onClick="mimeStickers"
+
+                            android:text="Mime"
+                            android:textColor="#FFF" />
+
+                        <Button
+                            android:id="@+id/fetish"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#000"
+                            android:onClick="fetishStickers"
+
+                            android:text="fetish"
+                            android:textColor="#FFF" />
+
+                        <Button
+                            android:id="@+id/memes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#000"
+                            android:onClick="memesStickers"
+                            android:text="memes"
+                            android:textColor="#FFF" />
+
+                        <Button
+                            android:id="@+id/kamasutra"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#000"
+                            android:onClick="kamasutraStickers"
+                            android:text="kamasutra"
+                            android:textColor="#FFF" />
+
+                        <Button
+                            android:id="@+id/others"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#000"
+                            android:onClick="othersStickers"
+                            android:text="Others"
+                            android:textColor="#FFF" />
+
+<!--                        <androidx.recyclerview.widget.RecyclerView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent">-->
+
+<!--                            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_pa rent">-->
+
+
+<!--                            </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                        </androidx.recyclerview.widget.RecyclerView>-->
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imageContainer"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#D20C0D"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

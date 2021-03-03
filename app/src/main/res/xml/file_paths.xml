@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <files-path name="my_images" path="images/"/>
+    <external-files-path name="save_images" path="Stickers/" />
+    <external-files-path name="stickers_category_1" path="StickersCategory1/" />
+    <external-files-path name="stickers_category_2" path="StickersCategory2/" />
+    <external-files-path name="stickers_category_3" path="StickersCategory3/" />
+    <external-files-path name="stickers_category_4" path="StickersCategory4/" />
+    <external-files-path name="stickers_category_5" path="StickersCategory5/" />
+    <external-files-path name="stickers_category_6" path="StickersCategory6/" />
+    <external-files-path name="stickers_category_7" path="StickersCategory7/" />
+
+</paths>

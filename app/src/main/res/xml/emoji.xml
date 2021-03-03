@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="14.5px"
+    android:verticalGap="10px"
+    android:keyHeight="44dp">
+    <!--    android:keyWidth="10%p"-->
+
+
+    <Row> <!--  First row, Number keys  -->
+        <!-- Label to display on screen | side of the keyboard if edge key | ASCII value 49 = 1 -->
+        <Key android:keyLabel="😀"   android:keyEdgeFlags="left"  android:codes="0x1F600"
+            android:keyWidth="8%p" />
+       <Key android:keyLabel="😃" android:codes="0x1F603" android:keyWidth="8%p"/>-->
+        <Key android:keyLabel="😄" android:codes="0x1F604" android:keyWidth="8%p"/>
+        <Key android:keyLabel="😁" android:codes="0x1F601" android:keyWidth="8%p"/>
+        <Key android:keyLabel="😆" android:codes="0x1F606" android:keyWidth="8%p"/>
+        <Key android:keyLabel="😅" android:codes="0x1F605" android:keyWidth="8%p"/>
+        <Key android:keyLabel="🤣" android:codes="0x1F923" android:keyWidth="8%p"/>
+        <Key android:keyLabel="😂" android:codes="0x1F602" android:keyWidth="8%p"/>
+        <Key android:keyLabel="🙂" android:codes="0x1F642" android:keyWidth="8%p"/>
+        <Key android:keyLabel="🙃" android:keyEdgeFlags="right"  android:codes="0x1F643"
+            android:keyWidth="8%p"/>
+    </Row>
+    <Row> <!--  Second Row, Symbols  -->
+        <Key android:keyLabel="😉"  android:keyEdgeFlags="left"  android:codes="0x1F609"
+            android:keyWidth="8%p"/>
+        <Key android:keyLabel="😊"  android:codes="0x1F60A" android:keyWidth="8%p"/>
+        <Key android:keyLabel="😇"  android:codes="0x1F607" android:keyWidth="8%p"/>
+        <Key android:keyLabel="🥰"  android:codes="0x1F970" android:keyWidth="8%p"/>
+        <Key android:keyLabel="😍"  android:codes="0x1F60D" android:keyWidth="8%p"/>
+        <Key android:keyLabel="🤩"  android:codes="0x1F929" android:keyWidth="8%p"/>
+        <Key android:keyLabel="😘"  android:codes="0x1F618" android:keyWidth="8%p"/>
+        <Key android:keyLabel="😗"  android:codes="0x1F617" android:keyWidth="8%p"/>
+        <Key android:keyLabel="😚"  android:codes="0x1F61A" android:keyWidth="8%p"/>
+        <Key android:keyLabel="😙"  android:keyEdgeFlags="right"  android:codes="0x1F619"
+            android:keyWidth="8%p"/>
+    </Row>
+    <Row>  <!--  Third Row, Symbols  -->
+        <Key android:keyLabel="😋"  android:keyEdgeFlags="left"  android:codes="0x1F60B"
+            android:keyWidth="8%p"/>
+        <Key android:keyLabel="😛"  android:codes="0x1F61B" android:keyWidth="8%p"/>
+        <Key android:keyLabel="😜"  android:codes="0x1F61C" android:keyWidth="8%p"/>
+        <Key android:keyLabel="🤪"  android:codes="0x1F92A" android:keyWidth="8%p"/>
+        <Key android:keyLabel="😝"  android:codes="0x1F61D" android:keyWidth="8%p"/>
+        <Key android:keyLabel="🤑"  android:codes="0x1F911" android:keyWidth="8%p"/>
+        <Key android:keyLabel="🤗"  android:codes="0x1F917" android:keyWidth="8%p"/>
+        <Key android:keyLabel="🤭"  android:codes="0x1F92D" android:keyWidth="8%p"/>
+        <Key android:keyLabel="🤫"  android:codes="0x1F92B" android:keyWidth="8%p"/>
+        <Key android:keyLabel="🤔"  android:keyEdgeFlags="right" android:codes="0x1F914"
+            android:keyWidth="8%p"/>
+    </Row>
+    <Row>  <!--  Fourth Row, Symbols  -->
+        <Key android:keyLabel="1/1"  android:keyEdgeFlags="left" android:keyWidth="12%p"
+            android:horizontalGap="3%p"  android:codes="-1"/>
+        <Key android:keyLabel="🤨"  android:codes="0x1F928" android:keyWidth="8%p"/>
+        <Key android:keyLabel="😐"  android:codes="0x1F610" android:keyWidth="8%p"/>
+        <Key android:keyLabel='😑'  android:codes="0x1F611" android:keyWidth="8%p"/>
+        <Key android:keyLabel="😶"  android:codes="0x1F636" android:keyWidth="8%p"/>
+        <Key android:keyLabel="😏"  android:codes="0x1F60F" android:keyWidth="8%p"/>
+        <Key android:keyLabel="😒"  android:codes="0x1F612" android:keyWidth="8%p"/>
+        <Key android:keyLabel="🙄"   android:codes="0x1F644" android:keyWidth="8%p"/>
+        <Key android:keyIcon="@drawable/sym_delete"  android:keyWidth="12%p"  android:isRepeatable="true"
+            android:keyEdgeFlags="right"  android:codes="-5"/>
+    </Row>
+
+    <Row android:rowEdgeFlags="bottom"> <!--  Bottom Special Buttons  -->
+
+        <!--   Special Emoji/Sticker upload key assigned to KEYCODE_MODE_CHANGE [-2]    -->
+        <!--  TODO: change code to -2 later      -->
+        <Key   android:keyLabel="Smacks" android:codes="-2" android:id="@+id/emojis"
+            android:keyEdgeFlags="left"  android:keyWidth="15%p" android:horizontalGap="1%p" />
+
+        <!-- key with special ID. Assigned to KEYCODE_ALT[-6]. -->
+        <Key android:keyLabel="ABC"  android:codes="-6" android:id="@+id/symbols"
+            android:keyWidth="8%p"  />
+
+        <!-- Space Bar-->
+        <Key android:keyLabel=" "  android:keyWidth="42%p"  android:isRepeatable="true"
+            android:codes="32" />
+
+        <!-- Period-->
+        <Key android:keyLabel="👍"  android:codes="0x1F44D"  android:keyWidth="8%p"/>
+
+        <!-- Enter Key -->
+        <Key android:keyIcon="@drawable/sym_enter"  android:keyWidth="15%p"  android:keyEdgeFlags="right"
+            android:codes="-4"/>
+    </Row>
+
+
+</Keyboard>
+

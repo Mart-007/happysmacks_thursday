@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="14.5px"
+    android:verticalGap="17px"
+    android:keyHeight="41dp">
+<!--    android:keyWidth="10%p"-->
+
+
+    <Row> <!--  First row, Number keys  -->
+        <!-- Label to display on screen | side of the keyboard if edge key | ASCII value 49 = 1 -->
+        <Key android:keyLabel="1" android:keyEdgeFlags="left"  android:codes="49"
+            android:keyWidth="8%p" />
+        <Key android:keyLabel="2" android:codes="50" android:keyWidth="8%p"/>
+        <Key android:keyLabel="3" android:codes="51" android:keyWidth="8%p"/>
+        <Key android:keyLabel="4" android:codes="52" android:keyWidth="8%p"/>
+        <Key android:keyLabel="5" android:codes="53" android:keyWidth="8%p"/>
+        <Key android:keyLabel="6" android:codes="54" android:keyWidth="8%p"/>
+        <Key android:keyLabel="7" android:codes="55" android:keyWidth="8%p"/>
+        <Key android:keyLabel="8" android:codes="56" android:keyWidth="8%p"/>
+        <Key android:keyLabel="9" android:codes="57" android:keyWidth="8%p"/>
+        <Key android:keyLabel="0" android:keyEdgeFlags="right"  android:codes="48"
+            android:keyWidth="8%p"/>
+    </Row>
+    <Row> <!--  Second Row, Letters  -->
+        <Key android:keyLabel="q"  android:keyEdgeFlags="left"  android:codes="113"
+            android:keyWidth="8%p"/>
+        <Key android:keyLabel="w"  android:codes="119" android:keyWidth="8%p"/>
+        <Key android:keyLabel="e"  android:codes="101" android:keyWidth="8%p"/>
+        <Key android:keyLabel="r"  android:codes="114" android:keyWidth="8%p"/>
+        <Key android:keyLabel="t"  android:codes="116" android:keyWidth="8%p"/>
+        <Key android:keyLabel="y"  android:codes="121" android:keyWidth="8%p"/>
+        <Key android:keyLabel="u"  android:codes="117" android:keyWidth="8%p"/>
+        <Key android:keyLabel="i"  android:codes="105" android:keyWidth="8%p"/>
+        <Key android:keyLabel="o"  android:codes="111" android:keyWidth="8%p"/>
+        <Key android:keyLabel="p"  android:keyEdgeFlags="right"  android:codes="112"
+            android:keyWidth="8%p"/>
+    </Row>
+    <Row> <!--  Third Row, Letters  -->
+        <Key android:keyLabel="a"  android:keyEdgeFlags="left"  android:codes="97"
+            android:keyWidth="8%p" android:horizontalGap="6%p"/>
+        <Key android:keyLabel="s"  android:codes="115" android:keyWidth="8%p"/>
+        <Key android:keyLabel="d"  android:codes="100" android:keyWidth="8%p"/>
+        <Key android:keyLabel="f"  android:codes="102" android:keyWidth="8%p"/>
+        <Key android:keyLabel="g"  android:codes="103" android:keyWidth="8%p"/>
+        <Key android:keyLabel="h"  android:codes="104" android:keyWidth="8%p"/>
+        <Key android:keyLabel="j"  android:codes="106" android:keyWidth="8%p"/>
+        <Key android:keyLabel="k"  android:codes="107" android:keyWidth="8%p"/>
+        <Key android:keyLabel="l"  android:codes="108" android:keyEdgeFlags="right"
+            android:keyWidth="8%p"/>
+    </Row>
+    <Row> <!--  Fourth Row, Letters  -->
+        <Key android:keyIcon="@drawable/sym_caps_off"  android:keyEdgeFlags="left"   android:codes="-1"
+            android:keyWidth="12%p"  android:horizontalGap="3%p"/>
+        <Key android:keyLabel="z"  android:codes="122"  android:keyWidth="8%p"/>
+        <Key android:keyLabel="x"  android:codes="120" android:keyWidth="8%p"/>
+        <Key android:keyLabel="c"  android:codes="99" android:keyWidth="8%p"/>
+
+
+<!--        test key . Remove later-->
+<!--        <Key android:keyIcon="@drawable/sys"  android:codes="99" android:keyWidth="8%p"/>-->
+
+
+
+        <Key android:keyLabel="v"  android:codes="118" android:keyWidth="8%p"/>
+        <Key android:keyLabel="b"  android:codes="98" android:keyWidth="8%p"/>
+        <Key android:keyLabel="n"  android:codes="110" android:keyWidth="8%p"/>
+        <Key android:keyLabel="m"  android:codes="109" android:keyWidth="8%p"/>
+        <Key android:keyIcon="@drawable/sym_delete"   android:isRepeatable="true"  android:keyEdgeFlags="right"
+            android:keyWidth="12%p"  android:codes="-5"/>
+    </Row>
+
+    <Row android:rowEdgeFlags="bottom"> <!--  Bottom Special Buttons  -->
+
+        <!--   Special Emoji/Sticker upload key assigned to KEYCODE_MODE_CHANGE [-2]    -->
+        <!--  TODO: change code to -2 later      -->
+<!--        <Key android:keyIcon="@drawable/sym_emoji"   android:codes="-2" android:id="@+id/emojis"-->
+<!--            android:keyEdgeFlags="left"  android:keyWidth="15%p" android:horizontalGap="1%p" />-->
+
+        <Key   android:keyLabel="Smacks" android:codes="-2" android:id="@+id/emojis"
+            android:keyEdgeFlags="left"  android:keyWidth="8%p" android:horizontalGap="1%p" />
+
+        <!-- key with special ID. Assigned to KEYCODE_ALT[-6]. -->
+        <Key android:keyLabel="!#\?"  android:codes="-6" android:id="@+id/symbols"
+            android:keyWidth="8%p"  />
+
+
+<!--        <Key android:keyLabel="♥" android:codes="0x2665" android:keyWidth="8%p"/>-->
+        <Key android:keyLabel="😀" android:codes="5000" android:keyWidth="8%p"/>
+        <!-- Space Bar-->
+        <Key android:keyLabel=" "  android:keyWidth="40%p"  android:isRepeatable="true"
+            android:codes="32" />
+
+        <!-- Period-->
+        <Key android:keyLabel="."  android:codes="46"  android:keyWidth="8%p"/>
+
+        <!-- Enter Key -->
+        <Key android:keyIcon="@drawable/sym_enter"  android:keyWidth="15%p"  android:keyEdgeFlags="right"
+            android:codes="-4" android:id="@+id/send_icon"/>
+    </Row>
+
+
+
+
+
+
+
+
+
+</Keyboard>
+
